@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Design Folio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700;800&family=Open+Sans:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="styles.css"/>
+  <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+<link rel="manifest" href="flavicon/site.webmanifest">
+</head>
+<body>
+
+<header>
+  <div class="logo-block">
+    <h1>Tate Ennis-Short</h1>
+    <p>Design Portfolio &nbsp;·&nbsp; Digital &amp; Physical</p>
+  </div>
+  <div class="header-links">
+    <button class="header-btn" id="about-btn">About</button>
+    <a class="header-btn" href="https://www.linkedin.com/in/tate-ennis-short/" target="_blank" rel="noopener">LinkedIn</a>
+  </div>
+  <div class="header-overlay"></div>
+</header>
+
+<main id="gallery"></main>
+
+<footer>
+  <span>All content copyright Tate Ennis-Short. All rights reserved 2026.</span>
+</footer>
+
+<div class="modal-backdrop" id="about-backdrop">
+  <div class="modal" id="about-modal">
+    <button class="modal-close" id="about-close" aria-label="Close">✕</button>
+    <div class="modal-body">
+      <div class="about-layout">
+        <div class="about-text">
+          <div class="modal-title">About Me</div>
+          <div class="modal-tags" style="margin-bottom:24px;">
+            <span class="tag tag-cad">CAD</span>
+            <span class="tag tag-digital">Digital</span>
+            <span class="tag tag-physical">Physical</span>
+            <span class="tag tag-vfx">VFX</span>
+          </div>
+          <p class="modal-intro" id="about-text">
+            I'm a creative at heart who finds genuine satisfaction in the act of making, whether building from scratch or refining an idea into a finished piece. My passion for design, forms where technical precision meets artistic imagination, and the ability to shape perception and bring visions to life is what drives me. I value working on projects that genuinely excite me, bringing a considered hands-on approach to every project. When I'm not deep in a project I'm usually exploring new techniques, experimenting with ideas, or finding inspiration in the world around me.
+          </p>
+        </div>
+        <div class="about-photo">
+          <img src="img/icon.jpeg" alt="Photo">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal-backdrop" id="modal-backdrop">
+  <div class="modal" id="modal">
+    <button class="modal-close" id="modal-close" aria-label="Close">✕</button>
+    <img class="modal-hero" id="modal-hero" src="" alt="">
+    <div class="modal-body">
+      <div class="modal-title" id="modal-title"></div>
+      <div class="modal-tags" id="modal-tags"></div>
+      <p class="modal-desc" id="modal-desc"></p>
+      <div class="modal-details" id="modal-details"></div>
+    </div>
+    <div class="modal-scroll-arrow" id="modal-scroll-arrow">
+      <button class="modal-scroll-arrow-btn" id="modal-arrow-btn" aria-label="Scroll down">
+        <svg viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg>
+      </button>
+    </div>
+  </div>
+</div>
+
+<script src="main.js"></script>
+</body>
+</html>
