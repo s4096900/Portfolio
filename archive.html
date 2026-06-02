@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>All Works — Archive</title>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700;800&family=Open+Sans:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="styles.css"/>
+  <link rel="stylesheet" href="archive.css"/>
+</head>
+<body>
+
+<header>
+  <div class="logo-block">
+    <a href="index.html" class="archive-back">← Back</a>
+    <h1>All Works</h1>
+    <p>Archive &nbsp;·&nbsp; Newest First</p>
+  </div>
+  <div class="header-links">
+    <a class="header-btn" href="index.html">Portfolio</a>
+  </div>
+</header>
+
+<main id="archive-list"></main>
+
+<!-- Archive Modal -->
+<div class="modal-backdrop" id="archive-modal-backdrop">
+  <div class="modal" id="archive-modal">
+    <button class="modal-close" id="archive-modal-close" aria-label="Close">✕</button>
+    <img class="modal-hero" id="archive-modal-hero" src="" alt="">
+    <div class="modal-body">
+      <div class="modal-title" id="archive-modal-title"></div>
+      <div class="archive-modal-meta" id="archive-modal-meta"></div>
+      <div class="modal-tags" id="archive-modal-tags"></div>
+      <p class="modal-desc" id="archive-modal-desc"></p>
+      <div class="modal-details" id="archive-modal-details"></div>
+    </div>
+    <div class="modal-scroll-arrow" id="archive-scroll-arrow">
+      <button class="modal-scroll-arrow-btn" id="archive-arrow-btn" aria-label="Scroll down">
+        <svg viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg>
+      </button>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <span>All content copyright Your Name. All rights reserved 2026.</span>
+</footer>
+
+<script src="archive.js"></script>
+</body>
+</html>

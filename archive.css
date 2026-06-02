@@ -1,0 +1,126 @@
+/* ── Archive back link ── */
+.archive-back {
+  display: inline-block;
+  font-size: .8rem;
+  font-weight: 500;
+  color: var(--mid);
+  text-decoration: none;
+  letter-spacing: .08em;
+  margin-bottom: 8px;
+  transition: color .2s;
+}
+
+.archive-back:hover { color: var(--accent); }
+
+/* ── Archive list ── */
+#archive-list {
+  padding: 32px 60px 60px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* ── Year group ── */
+.archive-year-group {
+  margin-bottom: 48px;
+  animation: fadeUp .6s ease both;
+}
+
+.archive-year-label {
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: .75rem;
+  font-weight: 700;
+  letter-spacing: .18em;
+  text-transform: uppercase;
+  color: var(--mid);
+  padding-bottom: 12px;
+  border-bottom: 1px solid var(--border);
+  margin-bottom: 4px;
+}
+
+/* ── Archive row ── */
+.archive-row {
+  display: grid;
+  grid-template-columns: 80px 1fr auto;
+  align-items: center;
+  gap: 24px;
+  padding: 16px 0;
+  border-bottom: 1px solid rgba(255,255,255,.04);
+  cursor: pointer;
+  transition: background .15s;
+  border-radius: 8px;
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+.archive-row:hover {
+  background: rgba(255,255,255,.03);
+}
+
+.archive-thumb {
+  width: 80px;
+  height: 56px;
+  border-radius: 6px;
+  object-fit: cover;
+  display: block;
+  background: var(--c2);
+}
+
+.archive-thumb-placeholder {
+  width: 80px;
+  height: 56px;
+  border-radius: 6px;
+  background: var(--c2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--border);
+  font-size: .7rem;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+}
+
+.archive-info { min-width: 0; }
+
+.archive-title {
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--bright);
+  margin-bottom: 6px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.archive-desc {
+  font-size: .8rem;
+  font-weight: 300;
+  color: var(--mid);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.archive-tags {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  flex-shrink: 0;
+}
+
+/* ── Archive modal meta ── */
+.archive-modal-meta {
+  font-size: .8rem;
+  color: var(--mid);
+  font-weight: 300;
+  letter-spacing: .08em;
+  margin-bottom: 10px;
+}
+
+/* ── Responsive ── */
+@media (max-width: 700px) {
+  #archive-list { padding: 24px 24px 48px; }
+  .archive-row { grid-template-columns: 60px 1fr; }
+  .archive-tags { display: none; }
+}

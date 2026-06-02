@@ -46,9 +46,9 @@ const projects = [
   // ── PROJECT 2 ────────────────────────────────────────────
   {
     id: 2,
-    title: 'Multi media experiment',
+    title: 'Immesive Exhibition',
     tags: ['VFX', 'Mixed'],
-    image: 'img/td1.png',
+    image: 'img/td1.gif',
     desc: 'Creating projection mapped visuals using TouchDesigner',
     details: {
       intro: 'This project is a proof of concept I worked on aiming to try and showcase a unqiue idea of projection mapping visuals on to trees to blend the digital and the organic through texture and light ',
@@ -66,7 +66,7 @@ const projects = [
         {
           heading: 'Outcome',
           text: "The next and final stage was to test onto a tree, and while I did manage to get this working, at the time I could only use a small, old LED projector, meaning there was a lot of light leak and extra softness added in. This was disappointing because it suddenly didn't feel like the same project I was aiming for, however it does articulate areas to improve on during further revisions in the future, like using a darker area to project and a higher quality projector.",
-          image: 'img/tdrw.png'
+          images: ['img/td2.png','img/td1.gif', 'img/td3.png',],
         }
       ]
     },
@@ -79,13 +79,13 @@ const projects = [
     title: 'Token Caddy',
     tags: ['CAD', 'Physical', 'Mixed'],
     image: 'img/cadf1.JPG',
-    desc: 'Rededsigned metalFABtokens SWU token holder',
+    desc: 'Rededsigned MetalFABtokens SWU token holder',
     details: {
       intro: 'Having completed my new deck box, I wanted to redesign my token caddy with the same design ethos, trying to make it unique and make it optimal for myself. I feel that many other designers and I design by trying to make things in our lives work and function best for us.',
       sections: [
         {
           heading: 'The idea',
-          text: 'To redesign the token holder made by metalFABtokens that designed for their tokens set products used for the Star Wars Unlimited TCG (SWU). The old token holder was made to work with the Gamegenic deck pod, and since I now had my own new deck box, I needed a new token caddy as well.',
+          text: 'To redesign the token holder made by MetalFABtokens that designed for their tokens set products used for the Star Wars Unlimited TCG (SWU). The old token holder was made to work with the Gamegenic deck pod, and since I now had my own new deck box, I needed a new token caddy as well.',
           image:['img/cadold.JPG']
         },
         {
