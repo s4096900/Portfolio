@@ -1,64 +1,5 @@
 /* ============================================================
-   ARCHIVE PROJECTS
-   ============================================================
-   Add projects here in the same format as main.js.
-   They are sorted newest first automatically.
-
-   Each project needs:
-   ┌─────────────────────────────────────────────────────────┐
-   │  id    – unique number                                  │
-   │  title – project name                                   │
-   │  date  – e.g. '2025' or 'March 2024'                   │
-   │  tags  – array of tag strings                           │
-   │  image – path to thumbnail image                        │
-   │  desc  – one sentence description                       │
-   │  details – same structure as main.js (optional)         │
-   └─────────────────────────────────────────────────────────┘
-   ============================================================ */
-
-const archiveProjects = [
-
-  // ── EXAMPLE — replace with your real projects ────────────
-  {
-    id: 1,
-    title: 'Example Archive Project',
-    date: '2025',
-    tags: ['VFX'],
-    image: 'img/your-image.jpg',
-    desc: 'A short description of this project.',
-    details: {
-      intro: 'A longer opening paragraph about the project.',
-      sections: [
-        {
-          heading: 'About',
-          text: 'More detail about what you made and how.',
-        }
-      ]
-    }
-  },
-
-  {
-    id: 2,
-    title: 'Another Archive Project',
-    date: '2024',
-    tags: ['Physical', 'Mixed'],
-    image: 'img/your-image.jpg',
-    desc: 'A short description of this project.',
-    details: {
-      intro: 'A longer opening paragraph about the project.',
-      sections: [
-        {
-          heading: 'About',
-          text: 'More detail about what you made and how.',
-        }
-      ]
-    }
-  },
-
-];
-
-/* ============================================================
-   TAG CLASSES — keep in sync with main.js
+   TAG HELPERS
    ============================================================ */
 function tagClass(t) {
   const map = {
@@ -67,10 +8,10 @@ function tagClass(t) {
     'Mixed':    'tag-mixed',
     'Digital':  'tag-digital',
     'VFX':      'tag-vfx',
+    'tag2':     'tag-tag2',
   };
   return map[t] || 'tag-physical';
 }
-
 /* ============================================================
    RENDER LIST — grouped by year, newest first
    ============================================================ */
@@ -78,7 +19,7 @@ function renderArchive() {
   const list = document.getElementById('archive-list');
 
   // sort newest first by date string
-  const sorted = [...archiveProjects].sort((a, b) => {
+  const sorted = [...projects].sort((a, b) => {
     const yearA = parseInt(a.date) || 0;
     const yearB = parseInt(b.date) || 0;
     return yearB - yearA;
@@ -127,7 +68,7 @@ function renderArchive() {
    MODAL
    ============================================================ */
 function openArchiveModal(id) {
-  const p = archiveProjects.find(p => p.id === id);
+  const p = projects.find(p => p.id === id);
   if (!p) return;
 
   document.getElementById('archive-modal-hero').src = p.image || '';
