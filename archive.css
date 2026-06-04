@@ -1,16 +1,5 @@
-/* ── Archive back link ── */
-.archive-back {
-  display: inline-block;
-  font-size: .8rem;
-  font-weight: 500;
-  color: var(--mid);
-  text-decoration: none;
-  letter-spacing: .08em;
-  margin-bottom: 8px;
-  transition: color .2s;
-}
-
-.archive-back:hover { color: var(--accent); }
+.header-btn.archive-portfolio-btn { border-color: rgba(152,195,121,.5); color: #98c379; }
+.header-btn.archive-portfolio-btn:hover { background: rgba(152,195,121,.15); color: #98c379; border-color: #98c379; }
 
 /* ── Archive list ── */
 #archive-list {

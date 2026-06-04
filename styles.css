@@ -134,7 +134,8 @@ header {
   text-decoration: none;
   transition: background .2s, color .2s, border-color .2s;
 }
-
+#archive-btn { border-color: rgba(240,198,116,.5); color: #f0c674; }
+#archive-btn:hover { background: rgba(240,198,116,.15); color: #f0c674; border-color: #f0c674; }
 .header-btn:hover { background: var(--c3); color: var(--bright); border-color: var(--c5); }
 
 #about-btn { border-color: rgba(168,159,239,.5); color: #a89fef; }
@@ -629,9 +630,46 @@ footer span { color: var(--accent); }
 }
 
 @media (max-width: 700px) {
-  .modal-body { padding: 24px 20px 36px; }
-}
+  header, .scroll-track, footer {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+  .scroll-track-wrap::before,
+  .scroll-track-wrap::after { display: none; }
 
+  /* switch to vertical stacked layout */
+  .scroll-track {
+    flex-direction: column;
+    overflow-x: visible;
+    overflow-y: visible;
+    padding: 8px 16px 24px;
+    scroll-snap-type: none;
+    gap: 16px;
+  }
+
+  .card {
+    flex: 0 0 auto;
+    width: 100%;
+  }
+
+  .card.expanded {
+    flex: 0 0 auto;
+    width: 100%;
+  }
+
+  .card-img {
+    height: clamp(200px, 50vw, 320px);
+  }
+
+  .card.expanded .card-img {
+    height: clamp(200px, 50vw, 320px);
+  }
+
+  :root {
+    --card-w: 100%;
+    --card-h: clamp(200px, 50vw, 320px);
+  }
+}
 /* ── Animations ── */
 @keyframes fadeDown {
   from { opacity: 0; transform: translateY(-18px); }
