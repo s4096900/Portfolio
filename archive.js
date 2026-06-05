@@ -81,28 +81,42 @@ function openArchiveModal(id) {
     p.tags.map(t => `<span class="tag ${tagClass(t)}">${t}</span>`).join('');
 
   const detailsEl = document.getElementById('archive-modal-details');
-  if (p.details) {
+if (p.details.sections) {
     let html = '';
     if (p.details.intro) html += `<p class="modal-intro">${p.details.intro}</p>`;
-    if (p.details.sections) {
-      p.details.sections.forEach(s => {
-        html += `<div class="modal-section">`;
-        if (s.heading) html += `<h3 class="modal-section-heading">${s.heading}</h3>`;
-        if (s.text)    html += `<p class="modal-section-text">${s.text}</p>`;
-        if (s.image)   html += `<img class="modal-section-img" src="${s.image}" alt="">`;
-        if (s.images) {
-          html += `<div class="modal-img-grid">`;
-          s.images.forEach(src => { html += `<img class="modal-section-img" src="${src}" alt="">`; });
-          html += `</div>`;
-        }
-        if (s.gallery) {
-          html += `<div class="modal-gallery">`;
-          s.gallery.forEach(src => { html += `<img class="modal-gallery-img" src="${src}" alt="">`; });
-          html += `</div>`;
-        }
+    
+    p.details.sections.forEach(s => {
+      html += `<div class="modal-section">`;
+      if (s.heading) html += `<h3 class="modal-section-heading">${s.heading}</h3>`;
+      if (s.text)    html += `<p class="modal-section-text">${s.text}</p>`;
+      if (s.image)   html += `<img class="modal-section-img" src="${s.image}" alt="">`;
+      if (s.images) {
+        html += `<div class="modal-img-grid">`;
+        s.images.forEach(src => { html += `<img class="modal-section-img" src="${src}" alt="">`; });
         html += `</div>`;
-      });
-    }
+      }
+      if (s.gallery) {
+        html += `<div class="modal-gallery">`;
+        s.gallery.forEach(src => { html += `<img class="modal-gallery-img" src="${src}" alt="">`; });
+        html += `</div>`;
+      }
+
+      // ── NEW IFRAME RENDER PIECE FOR ARCHIVE ──
+      if (s.iframeUrl) {
+        html += `
+          <div class="modal-iframe-container">
+            <iframe 
+              src="${s.iframeUrl}" 
+              frameborder="0" 
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+              allowfullscreen>
+            </iframe>
+          </div>
+        `;
+      }
+
+      html += `</div>`;
+    });
     detailsEl.innerHTML = html;
     detailsEl.style.display = 'block';
   } else {
