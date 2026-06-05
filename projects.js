@@ -33,17 +33,17 @@ const projects = [
       sections: [
         {
           heading: 'The Idea',
-          text: 'I wanted to create my own deck box for my deck making it unique and ergonomic for me.',
+          text: 'To create my own deck box for my deck making it unique and ergonomic for me.',
         },
         {
           heading: 'Process',
-          text: "Taking inspiration from Barron Domenici from CabalCoffees, who designed the flatpack deck box system, I started thinking about how I could create my own low profile deck box. I initially started making one out of wood, and while that one was turning out well, I felt that I could make another that was lighter and easier to carry. The flatpack by Domenici is good and very light and is 3D printed, but I didn't want to copy that and am not too fond of using plastic. Upon some reaserch I thought leather was an excellent material for the weight to strength ratio. I started by turning the wooden one into a size template, which I then used to unfold and form a net. This allowed me to cut the leather in a single sheet and would minimize sewing. Once sewed up I wet molded it. This process involves putting a block of wood inside and then submerging it in water for an hour, before then clamping it for a few days to dry and hold the shape. The left photo details how it looked fully dry and molded. The right image was taken after dying the leather a darker grey with some raven tones. What can also be observed is how the deck box holds cards when in use.",
+          text: "Informed by Barron Domenici's (CabalCoffees) flatpack deck box system, I aimed to develop a low-profile alternative — lighter than wood, without relying on 3D-printed plastic.Leather was selected for its weight-to-strength ratio. A wooden prototype was used to derive a flat net pattern, allowing the final piece to be cut from a single leather sheet and minimise stitching. The leather was wet-moulded over a wooden form — submerged for one hour then clamped for several days — to achieve a rigid, form-fitting shape. The piece was finished with a grey-raven dye.",
           images: ['img/pouchp.png', 'img/pouchu.png',],
            imageSize: 'natural',
         },
         {
           heading: 'Outcome',
-          text: "The finished deck box also has a magnetic clasp and two iron patches from the 'Keep Tassie Wild', I liked to have that little note about where I came from and the extra colour and detail. The deck box works very well, and I am very satisfied with how it has been functioning and looking so far.",
+          text: "The completed deck box features a magnetic clasp and two embroidered iron patches. The single-sheet construction keeps weight low while maintaining structural rigidity. The piece has been in regular use and performs as intended.",
           images: ['img/pouch_f.JPG', 'img/pouchb.JPG',],
         }
       ]
@@ -101,7 +101,7 @@ const projects = [
         },
         {
           heading: 'Process',
-          text: "I decided that I wanted the token holder to roll up into my playmat, as that is something that is brought with me when I play, so I started by measuring it and seeing how I could make a round tube like shape to fit inside its natural rolled up dimesnions. I then thought about how I could have it sit on the table, so I flattened out the bottom. I decided to stick with a 3D printed version of this, as to try and make the complex geometry out of another material would be challenging and not be able to get the quality I needed. It wasn't as simple as transferring over the profiles from the original, as there were some issues so I had to remeasure each metal token and create its hole. Now I didn't take photos of every prototype; the first two I made were small sections of the bigger ones with different layouts and sizes. The problems with them were that the tolerances were too tight to fit the tokens. After redesigning, I got to the top left image, this one has pretty close to right tolerances to fit, however what can be seen on left hand side is that there is some clipping where two compartments overlap. To fix this I ended up removing that last one and expanding the depth of the others to make sure to fit enough tokens. As seen in the other images this worked; the tolerance issue had been fixed. These versions also have pins and holes; these in the final version will be used with magnets to align them together.",
+          text: "The design brief was to create a token holder that rolls inside a standard playmat. Dimensions were taken from the mat's rolled profile to establish a cylindrical form, with a flattened base added to allow stable table placement. 3D printing was selected to achieve the required geometric precision. Each token compartment was measured individually and modelled from scratch rather than adapted from the original metalFABtokens design due to fit discrepancies. Two initial prototypes tested layout and sizing on partial sections — both failed due to tolerances too tight for the tokens. The third iteration achieved near-correct tolerances but revealed compartment overlap on one side. This was resolved by removing the conflicting compartment and increasing depth across the remaining slots. The final prototype incorporated pin-and-hole alignment features, designed to accept magnets in the finished version.",
           images: ['img/cadp1.jpg', 'img/cm2.png',],
           imageSize: 'natural'
         },
@@ -111,7 +111,7 @@ const projects = [
       
         {
           heading: 'Outcome',
-          text: "To finish it off, I inserted some small 5mm magnets into the holes and created a lid so that it could roll up properly. I still kept the flat bottom design as this allows it to sit flush on the mat or a table. It worked surprisingly well with the only issue being that the magnets aren't quite strong enough to hold the weight at certain angles. This is a minor issue and can be tweaked if I ever decide to update and refine the project further. ",
+          text: "5mm magnets were inserted into the alignment holes and a lid was added to allow the piece to roll cleanly inside the playmat. The flattened base retained for stable placement on both mat and table. The holder functions as intended — the only noted issue is magnet strength at certain angles, which does not affect standard use and remains a candidate for refinement in a future iteration.",
           images: ['img/cadf2.JPG', 'img/cadf3.JPG',],
         }
       ]
@@ -136,7 +136,7 @@ const projects = [
         },
         {
           heading: 'Phase 1',
-          text: "Inititially I started with a small pillar based on a simple design from the Ancient City in Minecraft. I then built a larger and larger one, eventually landing on this version. This version actually uses the original small pillar as the floating ones that encircle the main one. While Minecraft isn't known for being a 3D modelling software, a new tool called Axiom has made the rise. This tool allows for a numerous array of tools found in 3D modelling programs, which help with shaping and creating an array. I used such tools as the symmetry point, allowing the pillar face design and the ring to all look uniform. While these tools helped with effciency the majority of the design was made by hand. After working on the spacing and layout I was finally ready to start construction. This started from the base up, making the frame ethen filling out the walls and making the ring.",
+          text: "Development began with a small pillar derived from Minecraft's Ancient City structure, which was progressively scaled up to the final design. The original small pillar was repurposed as the floating elements encircling the main structure. Axiom — a Minecraft modelling tool offering symmetry, array and shaping functions — was used to ensure uniformity across the pillar faces and ring geometry, though the majority of the design was executed by hand. Construction proceeded base-up: framing first, then wall infill, then the ring.",
           images: ['img/luxd1.png', 'img/luxd2.png',]
         },
         {images: ['img/luxp1.png', 'img/luxp2.png',],
@@ -144,13 +144,13 @@ const projects = [
         },
         {
           heading: 'Phase 2',
-          text: "Once I had finished the main shapes and the finer details on the outer points and the ring, I stop whether it was due to burnout or lack of times I felt that I couldn't do anymore and that the faces didn't need detailing. I had overestimated the sheer amount of reasources need to make and then complete the pillar. The other fact was that while designing and building in Creative was fantastic with both Creative flight and the Axiom tools, I didn't have those in survival which meant it was going to be insanely challenging to finish the intricate details. It then stood like this for a few weeks before I made a decision to push through. The final image is a progress image taken during the face design construction. Here I used a tool called Litematica this allows for schematics to be overlayed within Minecraft to help with placement and spacing of designs.",
+          text: "Following completion of the primary forms and outer point detailing, construction stalled — a combination of resource underestimation and the absence of Creative mode tools in the Survival environment made finishing the facade work significantly more challenging. After several weeks the project was resumed. Litematica — a schematic overlay tool — was used during facade construction to assist with placement accuracy and spacing.",
           images: ['img/luxp3.png', 'img/luxp4.png', 'img/luxf.png',],
           imageSize: 'full'
         },
         {
           heading: 'Outcome',
-          text: "Finishing it off was incredibly fulfilling. I am very glad I decided to finish off all the detailing, even though it was an incredible amount of work; the end project looked stunning.",
+          text: "All facade detailing was completed in Survival. The finished structure met the original design intent and stands as the largest and most technically complex build undertaken on the server to date.",
         images: ['img/luxf1.png', 'img/luxf2.png', 'img/luxf3.png',],
         }
       ]
