@@ -55,27 +55,37 @@ const projects = [
     id: 2,
     featured: true,
     date: '2026',
-    title: 'Immesive Exhibition',
+    title: 'Ambient Voices',
     tags: ['VFX', 'Mixed'],
     image: 'img/td1.gif',
-    desc: 'Creating projection mapped visuals using TouchDesigner',
+    desc: 'Immersive projection mapping experience using TouchDesigner',
     details: {
-      intro: 'This project is a proof of concept I worked on aiming to try and showcase a unqiue idea of projection mapping visuals on to trees to blend the digital and the organic through texture and light ',
+      intro: 'Ambient Voices was a project I created as part of a duo to explore projection mapping and reactive visuals using TouchDesigner. The project uses a combination of real world trackers and a projected digital enviroment.',
       sections: [
         {
           heading: 'The Brief',
-          text: 'Create a proof of concept projection mapped project using TouchDesigner',
+          text: 'Create an immersive enviroment with a hidden force for a user to experince.',
         },
         {
-          heading: 'Process',
-          text: ' I started with a cylinder in TouchDesign to map the visuals using a variety of nodes to make a pulsing, glowing and shifting shape. I wanted it to feel semi organic and almost alive. It swirls around as a rainbow that shifts to red. From that, I then tested with a laser projector onto a wall, giving me great results. The shifting and fading looked exactly the way I wanted. There was a slight colour discrepancy between the wall projector and the render output, see the middle and right photos. But I felt that for a proof of conceptm it does make the message clear.',
-         images: ['img/tdnode.png','img/tdbb.png', 'img/td1.png',],
+          heading: 'Initial Visuals',
+          text: 'The project started as two sepereate projects that were combined morphing the best elements. The sonic based intererence field that is revealed through a handheld deivce, and a 3D game enviormnet when the user walks around the space and orbs react to their presence.',
+         images: ['img/prior1.png','img/prior2.png',],
           imageSize: 'natural', 
         },
         {
+            heading: 'Process',
+            text: 'The blendding of the project moved towards a more cohesive experience, where the user would use the handheld device to find sounds (voices) hidden in the space, and as they found them the environment would respond. Through the orb visuals, there were several itterations the visuals workoing wiht colour and bloom before setting on the cell like visuals that are used in the final peice.',
+          images: ['img/ptd1.png','img/ptd2.png',],
+            imageSize: 'natural', 
+        },
+        {
           heading: 'Outcome',
-          text: "The next and final stage was to test onto a tree, and while I did manage to get this working, at the time I could only use a small, old LED projector, meaning there was a lot of light leak and extra softness added in. This was disappointing because it suddenly didn't feel like the same project I was aiming for, however it does articulate areas to improve on during further revisions in the future, like using a darker area to project and a higher quality projector.",
+          text: "The final piece was an immersive experience where the user could explore the space and find hidden music stems that would trigger visual responses in the environment and collect them to build a song as the ending. The project was projected on to a large wall with a taped area on the ground to define the space to search within.",
           images: ['img/td2.png','img/td1.gif', 'img/td3.png',],
+        },
+        {
+          heading: 'Video Demonstration',
+          iframeUrl: 'https://www.youtube.com/embed/Td9Gn9Qnw04?si=QUzS8bQ4S6zpwFBH',
         }
       ]
     },

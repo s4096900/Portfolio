@@ -183,7 +183,20 @@ function openModal(id) {
             html += `</div>`;
           }
         }
-        html += `</div>`;
+        if (s.iframeUrl) {
+          html += `
+            <div class="modal-iframe-container">
+              <iframe 
+                src="${s.iframeUrl}" 
+                frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                allowfullscreen>
+              </iframe>
+            </div>
+          `;
+        }
+
+        html += `</div>`; // Existing closing div for the section
       });
     }
     detailsEl.innerHTML = html;
